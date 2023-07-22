@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+.shelfOuterBox{
+    width: auto;
+    margin-left: 25%;
+    margin-top: 25%;
+}
+
+.shelf{
+    background-color: #855E42;
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    border: 5px solid #382313;
+}
+
+.books{
+    background-color: #8b0c21;
+    width: clamp(90px, 100px, 200px);
+    height: 350px;
+    position: relative;
+    bottom: 358px;
+    border-radius: 10px;
+    border: 4px solid black;
+    color: white;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
+}
+
+.bookName{
+    font-size: 30px;
+    color: goldenrod;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.authorName{
+    font-size: 25px;
+    color: antiquewhite;
+    font-family: 'Bacasime Antique', 'Times New Roman', Times, serif;
+}
+
+.books:hover{
+    bottom: 400px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.shelfOuterBox button{
+    margin-top: 5%;
+    width: 10%;
+    height: 50px;
+    
+}

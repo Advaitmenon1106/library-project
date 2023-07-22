@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a new book</title>
+    <link rel="stylesheet" href="formStyles.css">
+    <script src="formScript.js" defer></script>
+
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+        <div class="questions"><label>Name of the book: </label>
+        <input type="text" id="title" required></div>
+        <div class="questions"><label>Name of the Author: </label>
+        <input type="text" id="authorName" required></div>
+        <div class="questions"><label>Done reading?</label>
+        <input type="radio" name="readOrNot" id="doneReading" value="yes" required><label for="doneReading">Yes</label>
+        <input type="radio" id="notFinished" name="readOrNot" value="no" required><label for="notFinished">No</label></div>
+        <input type="submit" id="submitButton">
+        </fieldset>
+    </form>
+</body>
+</html>
