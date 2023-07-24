@@ -10,7 +10,7 @@ for (i = 0; i<books.length; i++){
     bookList.push(new Book(books[i].childNodes[0].innerHTML, books[i].childNodes[2].innerHTML, true));
 }
 
-localStorage.setItem('bookArray', bookList);
+localStorage.setItem('bookArray', JSON.stringify(bookList));
 
 let newBookButton = document.getElementById('newButton');
 let shelf = document.getElementById('shelf');

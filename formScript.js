@@ -9,7 +9,8 @@ let bookTitleField = document.getElementById('title');
 let authorNameField = document.getElementById('authorName');
 let radioButtons = document.querySelectorAll('input[name="readOrNot"]');
 let form = document.getElementById('form');
-let bookArray = localStorage.getItem('bookArray');
+let bookList = JSON.parse(localStorage.getItem('bookArray'));
+
 
 submitButton.addEventListener('click', ()=>{
     let book = new Book();
@@ -33,9 +34,9 @@ submitButton.addEventListener('click', ()=>{
     }
 
     book.readingStatus = localStorage.getItem('readOrNot');
-
-    bookArray.length = book;
-    console.log(bookArray);
+    bookList.push(book);
+    console.log(bookList[3]);
+    localStorage.setItem('bookArray', JSON.stringify(bookList));
 
     let shelf = parent.document.getElementById('shelf');
     let shelfOuterBox = parent.document.getElementById('shelfOuterBox');
